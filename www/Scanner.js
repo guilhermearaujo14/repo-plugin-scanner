@@ -1,5 +1,5 @@
 var exec = require('cordova/exec');
 
 exports.scan = function(success, error) {
-    exec(success, error, 'ScannerPlugin', 'startScan', []);
+    exec(success, error, 'MLKitDocScanner', 'startScan', []);
 };
