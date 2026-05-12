@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-mlkit-docscanner" version="1.0.0">
     <name>MLKitDocScanner</name>
-    <js-module src="www/scanner.js" name="MLKitDocScanner">
+    <js-module src="www/Scanner.js" name="MLKitDocScanner">
         <clobbers target="window.plugins.MLKitDocScanner" />
     </js-module>
 
@@ -14,6 +14,6 @@
 
         <!-- Dependência do Google ML Kit -->
         <framework src="com.google.android.gms:play-services-mlkit-document-scanner:16.0.0-beta1" />
-        <source-file src="src/android/MLKitDocScanner.java" target-dir="src/com/exemplo/plugin/" />
+        <source-file src="src/android/ScannerPlugin.java" target-dir="src/com/guilherme/scanner/" />
     </platform>
 </plugin>
