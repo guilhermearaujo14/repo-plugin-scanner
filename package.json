@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-mlkit-scanner",
+  "version": "1.0.0",
+  "description": "Scanner de documentos usando Google ML Kit para OutSystems",
+  "cordova": {
+    "id": "com.guilherme.scanner",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Guilherme",
+  "license": "Apache-2.0"
+}
