@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-mlkit-docscanner" version="1.0.0">
     <name>MLKitDocScanner</name>
-    <js-module src="www/Scanner.js" name="MLKitDocScanner">
+    <js-module src="www/Scanner.js" name="Scanner">
         <clobbers target="window.plugins.MLKitDocScanner" />
     </js-module>
 
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="MLKitDocScanner">
+            <feature name="ScannerPlugin">
                 <param name="android-package" value="com.guilherme.scanner.ScannerPlugin"/>
             </feature>
         </config-file>
 
         <!-- Dependência do Google ML Kit -->
-        <framework src="com.google.android.gms:play-services-mlkit-document-scanner:16.0.0-beta1" />
+        <framework src="com.google.android.gms:play-services-mlkit-document-scanner:16.0.0" />
         <source-file src="src/android/ScannerPlugin.java" target-dir="src/com/guilherme/scanner/" />
     </platform>
 </plugin>
